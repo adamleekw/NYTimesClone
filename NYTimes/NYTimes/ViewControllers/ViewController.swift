@@ -22,6 +22,25 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var tapGesture: UITapGestureRecognizer?
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        currentPage = 0
+        self.getArticles(query: "",page: currentPage)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    func tap(gesture: UITapGestureRecognizer) {
+        searchBar.resignFirstResponder()
+    }
+    
     // MARK: - UICollectionViewDataSource protocol
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -99,6 +118,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
+    // MARK: - Article Search call
     func getArticles(query: String, page: Int){
         ServiceManager.articleSearch (query: query, page: page,completion: { (success, responseData) in
             if success {
@@ -121,24 +141,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
         })
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        currentPage = 0
-        self.getArticles(query: "",page: currentPage)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
-    }
     
-    func tap(gesture: UITapGestureRecognizer) {
-        searchBar.resignFirstResponder()
-    }
-    
+    // MARK: - Search bar delegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.arrRecentSearch.append(searchBar.text!)
         if(self.arrRecentSearch.count>10){

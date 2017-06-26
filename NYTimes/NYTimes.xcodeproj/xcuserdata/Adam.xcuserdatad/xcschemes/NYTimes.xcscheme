@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6630E8561F00BAA1006E67E2"
+               BuildableName = "NYTimesTests.xctest"
+               BlueprintName = "NYTimesTests"
+               ReferencedContainer = "container:NYTimes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6630E8641F00C2FB006E67E2"
+               BuildableName = "NYTimesUITests.xctest"
+               BlueprintName = "NYTimesUITests"
+               ReferencedContainer = "container:NYTimes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -8,7 +8,6 @@
 
 import Foundation
 
-//4129f5eb342d42a188d9df9057c74efe
 struct Url{
     static var baseURL = "http://api.nytimes.com/svc/"
     static var imgBase = "https://static01.nyt.com/"

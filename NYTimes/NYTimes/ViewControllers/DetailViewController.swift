@@ -17,7 +17,9 @@ class DetailViewController: UIViewController{
         super.viewDidLoad()
         self.title = "The New York Times"
         self.goArticle(index: selectedArticle)
-        //swipe left or right to go back or foward
+    }
+    
+    func addSwipeGestures(){
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes))
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes))
         
@@ -28,13 +30,13 @@ class DetailViewController: UIViewController{
         view.addGestureRecognizer(rightSwipe)
     }
     
-    //swipe left to go forward
+    
+    //navigate to previous /  next article
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         if (sender.direction == .left) {
             print("left swipe")
             selectedArticle = selectedArticle + 1
         }
-        //swipe right to go backward
         if (sender.direction == .right) {
             print("right swipe")
             selectedArticle = selectedArticle - 1

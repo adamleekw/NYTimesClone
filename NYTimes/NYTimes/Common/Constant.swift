@@ -10,5 +10,6 @@ import Foundation
 
 struct NYConstants
 {
-    static let NY_API_KEY = "4129f5eb342d42a188d9df9057c74efe"
+//    static let NY_API_KEY = "4129f5eb342d42a188d9df9057c74efe"
+    static let NY_API_KEY = "9f676de82c3447c4805b0a55c5d47050"
 }
