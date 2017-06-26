@@ -45,21 +45,3 @@ import UIKit
         task.resume()
     }
 }
-
-extension HTTPRequestManager:URLSessionDelegate {
-    
-    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        // We've got a URLAuthenticationChallenge - we simply trust the HTTPS server and we proceed
-        print("didReceive challenge")
-        completionHandler(.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
-    }
-    
-    public func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
-        // We've got an error
-        if let err = error {
-            print("Error: \(err.localizedDescription)")
-        } else {
-            print("Error. Giving up")
-        }
-    }
-}

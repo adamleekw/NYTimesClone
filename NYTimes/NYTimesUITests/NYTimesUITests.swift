@@ -59,5 +59,12 @@ class NYTimesUITests: XCTestCase {
         let firstWeb = app.webViews.children(matching: .any).element(boundBy:0)
         firstWeb.swipeRight()
     }
+    
+    func testAppBehavior(){
+        let app = XCUIApplication()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .searchField).element.tap()
+        
+        app.tap()
+    }
 
 }

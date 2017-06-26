@@ -17,6 +17,8 @@
 		6630E84F1F00B272006E67E2 /* NYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630E84D1F00B272006E67E2 /* NYCollectionViewCell.swift */; };
 		6630E85A1F00BAA1006E67E2 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630E8591F00BAA1006E67E2 /* NYTimesTests.swift */; };
 		6630E8681F00C2FB006E67E2 /* NYTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630E8671F00C2FB006E67E2 /* NYTimesUITests.swift */; };
+		6630E8701F00F493006E67E2 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630E86F1F00F493006E67E2 /* TestingAppDelegate.swift */; };
+		6630E8721F00F4A7006E67E2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6630E8711F00F4A7006E67E2 /* main.swift */; };
 		66B2670C1EFF94CA00D0489F /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B267091EFF94CA00D0489F /* HTTPRequest.swift */; };
 		66B2670D1EFF94CA00D0489F /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2670A1EFF94CA00D0489F /* HTTPRequestManager.swift */; };
 		66B2670E1EFF94CA00D0489F /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2670B1EFF94CA00D0489F /* ServiceManager.swift */; };
@@ -59,6 +61,8 @@
 		6630E8651F00C2FB006E67E2 /* NYTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6630E8671F00C2FB006E67E2 /* NYTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUITests.swift; sourceTree = "<group>"; };
 		6630E8691F00C2FB006E67E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6630E86F1F00F493006E67E2 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		6630E8711F00F4A7006E67E2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		66B267091EFF94CA00D0489F /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPRequest.swift; path = Service/HTTPRequest.swift; sourceTree = "<group>"; };
 		66B2670A1EFF94CA00D0489F /* HTTPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPRequestManager.swift; path = Service/HTTPRequestManager.swift; sourceTree = "<group>"; };
 		66B2670B1EFF94CA00D0489F /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceManager.swift; path = Service/ServiceManager.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				6630E83F1F00B1E6006E67E2 /* ViewControllers */,
 				6630E83E1F00B1C9006E67E2 /* Cell */,
 				B000412B1EFA7DA1009DDC77 /* AppDelegate.swift */,
+				6630E86F1F00F493006E67E2 /* TestingAppDelegate.swift */,
+				6630E8711F00F4A7006E67E2 /* main.swift */,
 				B000412F1EFA7DA1009DDC77 /* Main.storyboard */,
 				B00041321EFA7DA1009DDC77 /* Assets.xcassets */,
 				B00041341EFA7DA1009DDC77 /* LaunchScreen.storyboard */,
@@ -358,9 +364,11 @@
 				B000412C1EFA7DA1009DDC77 /* AppDelegate.swift in Sources */,
 				6630E84B1F00B25B006E67E2 /* ViewController.swift in Sources */,
 				66B267101EFF94D300D0489F /* ArticleSearchModel.swift in Sources */,
+				6630E8701F00F493006E67E2 /* TestingAppDelegate.swift in Sources */,
 				66B2670D1EFF94CA00D0489F /* HTTPRequestManager.swift in Sources */,
 				6630E8441F00B251006E67E2 /* Constant.swift in Sources */,
 				6630E84A1F00B25B006E67E2 /* DetailViewController.swift in Sources */,
+				6630E8721F00F4A7006E67E2 /* main.swift in Sources */,
 				6630E8451F00B251006E67E2 /* Extensions.swift in Sources */,
 				6630E8461F00B251006E67E2 /* Url.swift in Sources */,
 				6630E84E1F00B272006E67E2 /* HistoryCollectionViewCell.swift in Sources */,

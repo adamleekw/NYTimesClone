@@ -7,45 +7,7 @@
 //
 import Foundation
 
-extension String {
-    var serviceURL: String? {
-        return self.serviceURL
-    }
-    
-    var jsonObject:NSDictionary? {
-        let JSONData = self.data(using: String.Encoding.utf8)
-        do {
-            let JSON = try JSONSerialization.jsonObject(with: JSONData!, options:JSONSerialization.ReadingOptions(rawValue: 0))
-            guard let JSONDictionary :NSDictionary = JSON as? NSDictionary else {
-                // put in function
-                return nil
-            }
-            return JSONDictionary
-        }
-        catch let JSONError as NSError {
-            print("\(JSONError)")
-        }
-        return nil
-    }
-}
-
 extension Data {
-    
-    var jsonObject:NSDictionary? {
-        do {
-            let JSON = try JSONSerialization.jsonObject(with: self as Data, options:JSONSerialization.ReadingOptions(rawValue: 0))
-            guard let JSONDictionary :NSDictionary = JSON as? NSDictionary else {
-                // put in function
-                return nil
-            }
-            return JSONDictionary
-        }
-        catch let JSONError as NSError {
-            print("\(JSONError)")
-        }
-        return nil
-    }
-    
     func  getJsonResult()->Any {
         var jsonResult:Any? = nil
         do {

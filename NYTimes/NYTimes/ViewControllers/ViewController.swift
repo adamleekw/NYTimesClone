@@ -29,10 +29,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.getArticles(query: "",page: currentPage)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }

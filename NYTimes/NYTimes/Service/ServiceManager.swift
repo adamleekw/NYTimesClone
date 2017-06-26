@@ -50,10 +50,7 @@ import Foundation
                         print("resp is not valid JSON data")
                     }
                 } catch let error as NSError {
-                    print("Invalid - \(error)")
-                    let dict = NSDictionary()
-                    dict.setValue("Invalid", forKey: "ReturnCode")
-                    completion(false, dict as AnyObject)
+                    completion(false, "Invalid - \(error)" as AnyObject)
                     return
                 }
                 

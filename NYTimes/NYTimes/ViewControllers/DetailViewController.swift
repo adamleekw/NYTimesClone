@@ -16,6 +16,7 @@ class DetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "The New York Times"
+        self.addSwipeGestures()
         self.goArticle(index: selectedArticle)
     }
     

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@objc public class ArticleSearchModel:NSObject {
+public class ArticleSearchModel:NSObject {
     
     var title = ""
     var snippet = ""
@@ -15,7 +15,7 @@ import Foundation
     var img = NSMutableArray()
     var webUrl = ""
     
-    override init() {}
+//    override init() {}
 
     init(JSON: [String:Any]) {
         let dic = JSON["headline"] as! [String : Any]
@@ -33,15 +33,6 @@ public func stringForJSONKey(JSON: [String:Any], key: String) -> String{
     }
     else {
         return ""
-    }
-}
-
-public func falseForJSONKey(JSON: [String:Any], key: String) -> Bool{
-    if(JSON[key] as? Bool != nil){
-        return (JSON[key] as! Bool)
-    }
-    else {
-        return false
     }
 }
 
