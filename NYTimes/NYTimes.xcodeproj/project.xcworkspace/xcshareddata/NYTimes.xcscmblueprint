@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B8C3A21C700F8B55436FE1717F7D38464F7CB6F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B8C3A21C700F8B55436FE1717F7D38464F7CB6F7" : 9223372036854775807,
+    "9B9B5B4231ABE3BE3B79715AE955678DC1D9D3C5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "549477C9-EE2C-4B80-ACE1-BC76F1F20374",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B8C3A21C700F8B55436FE1717F7D38464F7CB6F7" : "NYTimes\/",
+    "9B9B5B4231ABE3BE3B79715AE955678DC1D9D3C5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NYTimes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NYTimes\/NYTimes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/blues89\/nytimesclone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B9B5B4231ABE3BE3B79715AE955678DC1D9D3C5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/blues89\/nytimes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B8C3A21C700F8B55436FE1717F7D38464F7CB6F7"
+    }
+  ]
+}
